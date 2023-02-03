@@ -27,6 +27,8 @@ vim.opt.updatetime = 50
 vim.opt.splitright = true
 vim.opt.splitbelow = true
 
+vim.opt.cursorline = true
+
 -- statusline
 vim.opt.statusline="%{FugitiveStatusline()} %f%m%= %y %{&fileencoding?&fileencoding:&encoding} %p%% %l:%c"
 -- end statusline

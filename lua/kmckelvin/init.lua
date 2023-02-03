@@ -1,3 +1,5 @@
 require("kmckelvin.keymap")
 require("kmckelvin.packer")
 require("kmckelvin.set")
+require("kmckelvin.tmux")
+require("kmckelvin.whitespace")

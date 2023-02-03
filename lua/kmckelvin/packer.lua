@@ -56,6 +56,9 @@ return require('packer').startup(function(use)
   use('scrooloose/nerdtree')
   use('michaeljsmith/vim-indent-object')
   use('jwhitley/vim-matchit')
+  use('lukas-reineke/indent-blankline.nvim')
+  use('mg979/vim-visual-multi')
+
 
 
 end)
