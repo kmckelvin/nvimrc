@@ -79,6 +79,11 @@ _G.packer_plugins = {
     path = "/Users/kevin/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
+  ["auto-pairs"] = {
+    loaded = true,
+    path = "/Users/kevin/.local/share/nvim/site/pack/packer/start/auto-pairs",
+    url = "https://github.com/jiangmiao/auto-pairs"
+  },
   ["cmp-buffer"] = {
     loaded = true,
     path = "/Users/kevin/.local/share/nvim/site/pack/packer/start/cmp-buffer",
@@ -168,6 +173,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/kevin/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
+  },
+  ["vim-code-dark"] = {
+    loaded = true,
+    path = "/Users/kevin/.local/share/nvim/site/pack/packer/start/vim-code-dark",
+    url = "https://github.com/tomasiser/vim-code-dark"
   },
   ["vim-commentary"] = {
     loaded = true,
