@@ -16,6 +16,7 @@ lsp.ensure_installed({
 lsp.on_attach(function(client, bufnr)
   local opts = { buffer = bufnr, remap = false }
 
+  vim.keymap.set("n", "<leader>vff", function() vim.lsp.buf.format() end, opts)
   vim.keymap.set("n", "<leader>vd", function() vim.diagnostic.open_float() end, opts)
   vim.keymap.set("n", "<leader>ca", function() vim.lsp.buf.code_action() end, opts)
   vim.keymap.set("n", "<leader>gr", function() vim.lsp.buf.references() end, opts)
