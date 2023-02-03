@@ -19,7 +19,7 @@ vim.opt.hlsearch = false
 vim.opt.incsearch = true
 
 vim.opt.termguicolors = true
-vim.opt.scrolloff = 5
+vim.opt.scrolloff = 8
 vim.opt.signcolumn = "yes"
 
 vim.opt.updatetime = 50
@@ -30,5 +30,5 @@ vim.opt.splitbelow = true
 vim.opt.cursorline = true
 
 -- statusline
-vim.opt.statusline="%{FugitiveStatusline()} %f%m%= %y %{&fileencoding?&fileencoding:&encoding} %p%% %l:%c"
+vim.opt.statusline = "%{FugitiveStatusline()} %f%m%= %y %{&fileencoding?&fileencoding:&encoding} %p%% %l:%c"
 -- end statusline
