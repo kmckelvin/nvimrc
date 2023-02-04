@@ -10,7 +10,8 @@ Where possible I've tried to use the neovim lua bindings, and use vim.cmd sparin
 
 ## Core plugins
 
-- Telescope for fuzzy finding and LSP list navigation
-- LSP Zero
-- Fugitive (the best git client!)
-- Visual Multi (for multiple cursor support with C-n)
+- [Telescope](https://github.com/nvim-telescope/telescope.nvim) for fuzzy finding and LSP list navigation
+- [LSP Zero](https://github.com/VonHeikemen/lsp-zero.nvim)
+- [Fugitive](https://github.com/tpope/vim-fugitive) (the best git client!)
+- [Visual Multi](https://github.com/mg979/vim-visual-multi) (for multiple cursor support with C-n)
+- [Treesitter](https://github.com/nvim-treesitter/nvim-treesitter) for AST magic and syntax highlighting
