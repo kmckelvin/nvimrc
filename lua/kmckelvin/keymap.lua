@@ -2,7 +2,7 @@ vim.g.mapleader = " "
 
 -- vim config
 vim.keymap.set("n", "<leader>vs", ":source ~/.config/nvim/init.lua<CR>")
-vim.keymap.set("n", "<leader>vi", ":tabe ~/.config/nvim/init.lua<CR>")
+vim.keymap.set("n", "<leader>vi", ":tabe ~/.config/nvim/init.lua<CR>:lcd %:p:h<CR>")
 
 -- tabs
 vim.keymap.set("n", "t]", ":tabnext<CR>")
