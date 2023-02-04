@@ -33,6 +33,10 @@ return require('packer').startup(function(use)
       -- Snippets
       { 'L3MON4D3/LuaSnip' }, -- Required
       { 'rafamadriz/friendly-snippets' }, -- Optional
+
+      --
+      { 'j-hui/fidget.nvim' },
+      { 'folke/neodev.nvim' },
     }
   }
 
@@ -62,5 +66,6 @@ return require('packer').startup(function(use)
   use('tpope/vim-rails')
   use('tpope/vim-surround')
   use('vim-test/vim-test')
+  use('nvim-lualine/lualine.nvim') -- Fancier statusline
 
 end)

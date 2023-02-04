@@ -29,6 +29,11 @@ vim.opt.splitbelow = true
 
 vim.opt.cursorline = true
 
--- statusline
-vim.opt.statusline = "%{FugitiveStatusline()} %f%m%= %y %{&fileencoding?&fileencoding:&encoding} %p%% %l:%c"
--- end statusline
+local highlight_group = vim.api.nvim_create_augroup('YankHighlight', { clear = true })
+vim.api.nvim_create_autocmd('TextYankPost', {
+  callback = function()
+    vim.highlight.on_yank()
+  end,
+  group = highlight_group,
+  pattern = '*',
+})
