@@ -40,11 +40,6 @@ return require('packer').startup(function(use)
     }
   }
 
-  use({
-    'weilbith/nvim-code-action-menu',
-    cmd = 'CodeActionMenu',
-  })
-
   use('APZelos/blamer.nvim')
   use('MunifTanjim/prettier.nvim')
   use('airblade/vim-gitgutter')
