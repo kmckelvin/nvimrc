@@ -36,9 +36,12 @@ return require('packer').startup(function(use)
     }
   }
 
+  use('APZelos/blamer.nvim')
+  use('MunifTanjim/prettier.nvim')
   use('airblade/vim-gitgutter')
   use('christoomey/vim-tmux-navigator')
   use('jiangmiao/auto-pairs')
+  use('jose-elias-alvarez/null-ls.nvim')
   use('joshdick/onedark.vim')
   use('jwhitley/vim-matchit')
   use('lukas-reineke/indent-blankline.nvim')
@@ -53,6 +56,5 @@ return require('packer').startup(function(use)
   use('tpope/vim-rails')
   use('tpope/vim-surround')
   use('vim-test/vim-test')
-  use('jose-elias-alvarez/null-ls.nvim')
-  use('MunifTanjim/prettier.nvim')
+
 end)

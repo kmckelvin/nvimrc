@@ -84,6 +84,11 @@ _G.packer_plugins = {
     path = "/Users/kevin/.local/share/nvim/site/pack/packer/start/auto-pairs",
     url = "https://github.com/jiangmiao/auto-pairs"
   },
+  ["blamer.nvim"] = {
+    loaded = true,
+    path = "/Users/kevin/.local/share/nvim/site/pack/packer/start/blamer.nvim",
+    url = "https://github.com/APZelos/blamer.nvim"
+  },
   ["cmp-buffer"] = {
     loaded = true,
     path = "/Users/kevin/.local/share/nvim/site/pack/packer/start/cmp-buffer",
