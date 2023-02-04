@@ -237,6 +237,11 @@ _G.packer_plugins = {
     path = "/Users/kevin/.local/share/nvim/site/pack/packer/start/vim-rails",
     url = "https://github.com/tpope/vim-rails"
   },
+  ["vim-slim"] = {
+    loaded = true,
+    path = "/Users/kevin/.local/share/nvim/site/pack/packer/start/vim-slim",
+    url = "https://github.com/slim-template/vim-slim"
+  },
   ["vim-surround"] = {
     loaded = true,
     path = "/Users/kevin/.local/share/nvim/site/pack/packer/start/vim-surround",
