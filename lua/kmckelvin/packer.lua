@@ -67,5 +67,7 @@ return require('packer').startup(function(use)
   use('tpope/vim-rails')
   use('tpope/vim-surround')
   use('vim-test/vim-test')
+  use('nvim-telescope/telescope-ui-select.nvim')
+
 
 end)
