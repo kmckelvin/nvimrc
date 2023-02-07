@@ -5,6 +5,9 @@ if vim.fn.empty(vim.fn.glob(install_path)) > 0 then
   vim.cmd [[packadd packer.nvim]]
 end
 
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
+
 return require('packer').startup(function(use)
   -- Packer can manage itself
   use 'wbthomason/packer.nvim'
@@ -56,12 +59,11 @@ return require('packer').startup(function(use)
   use('michaeljsmith/vim-indent-object')
   use('nvim-lualine/lualine.nvim')
   use('nvim-telescope/telescope-ui-select.nvim')
-  use('nvim-tree/nvim-tree.lua', { requires = { 'nvim-tree/nvim-web-devicons' } })
+  use('nvim-tree/nvim-tree.lua')
   use('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' })
   use('nvim-treesitter/nvim-treesitter-context')
   use('nvim-treesitter/nvim-treesitter-textobjects', { after = 'nvim-treesitter' })
   use('nvim-treesitter/playground')
-  use('ryanoasis/vim-devicons')
   use('slim-template/vim-slim')
   use('tomasiser/vim-code-dark')
   use('tpope/vim-commentary')
@@ -70,5 +72,6 @@ return require('packer').startup(function(use)
   use('tpope/vim-rhubarb')
   use('tpope/vim-surround')
   use('vim-test/vim-test')
+  use('nvim-tree/nvim-web-devicons')
 
 end)
