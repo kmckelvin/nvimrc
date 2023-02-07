@@ -71,6 +71,9 @@ require('treesitter-context').setup {
     yaml = {
       'block_mapping_pair',
     },
+    ruby = {
+      'call'
+    }
   },
   exact_patterns = {
     -- Example for a specific filetype with Lua patterns
