@@ -29,6 +29,9 @@ vim.opt.splitbelow = true
 
 vim.opt.cursorline = true
 
+vim.opt.title = true
+vim.opt.titlestring = "NVIM - %{fnamemodify(getcwd(), \":t\")}"
+
 local highlight_group = vim.api.nvim_create_augroup('YankHighlight', { clear = true })
 vim.api.nvim_create_autocmd('TextYankPost', {
   callback = function()
