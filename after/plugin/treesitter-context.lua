@@ -72,7 +72,8 @@ require('treesitter-context').setup {
       'block_mapping_pair',
     },
     ruby = {
-      'call'
+      'call',
+      'module'
     }
   },
   exact_patterns = {
