@@ -53,7 +53,15 @@ lsp.on_attach(function(client, bufnr)
 end)
 
 vim.api.nvim_create_autocmd("BufWritePre", {
-  pattern = { "*.go", "*.js", "*.jsx", "*.json", "*.ts", "*.tsx", "*.lua" },
+  pattern = { "*.go",
+    "*.js",
+    "*.jsx",
+    "*.json",
+    "*.ts",
+    "*.tsx",
+    "*.lua",
+    "*.rs"
+  },
   callback = function() vim.lsp.buf.format() end
 })
 
