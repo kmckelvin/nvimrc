@@ -26,3 +26,5 @@ vim.keymap.set("n", "Q", ":q<CR>")
 
 -- window management
 vim.keymap.set("n", "<leader>=", ":wincmd =<CR>")
+vim.keymap.set("n", "<leader>[", ":bp<CR>")
+vim.keymap.set("n", "<leader>]", ":bn<CR>")
