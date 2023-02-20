@@ -7,6 +7,7 @@ vim.keymap.set("n", "<leader>vi", ":tabe ~/.config/nvim/init.lua<CR>:lcd %:p:h<C
 -- tabs
 vim.keymap.set("n", "t]", ":tabnext<CR>")
 vim.keymap.set("n", "t[", ":tabprevious<CR>")
+vim.keymap.set("n", "<leader>bd", ":bdelete<CR>")
 
 -- file management
 vim.keymap.set("n", "<leader>fs", ":w<CR>")
