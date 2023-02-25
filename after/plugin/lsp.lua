@@ -36,7 +36,7 @@ lsp.on_attach(function(client, bufnr)
   nmap('<leader>rn', vim.lsp.buf.rename, '[R]e[n]ame')
   nmap('<leader>ca', vim.lsp.buf.code_action, '[C]ode [A]ction')
 
-  nmap('gd', vim.lsp.buf.definition, '[G]oto [D]efinition')
+  nmap('gd', telescope.lsp_definitions, '[G]oto [D]efinition')
   nmap('gr', telescope.lsp_references, '[G]oto [R]eferences')
   nmap('gi', telescope.lsp_implementations, '[G]oto [I]mplementation')
   nmap('gy', telescope.lsp_type_definitions, '[G]oto T[y]pe definition')
