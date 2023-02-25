@@ -10,6 +10,7 @@ lsp.ensure_installed({
   'tsserver',
   'eslint',
   'gopls',
+  'solargraph',
 })
 
 lsp.on_attach(function(client, bufnr)
