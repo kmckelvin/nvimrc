@@ -60,6 +60,10 @@ return require('packer').startup(function(use)
     end
   })
 
+  use { "akinsho/toggleterm.nvim", tag = '*', config = function()
+    require("toggleterm").setup()
+  end }
+
   use('APZelos/blamer.nvim')
   use('MunifTanjim/prettier.nvim')
   use('RRethy/nvim-treesitter-endwise')

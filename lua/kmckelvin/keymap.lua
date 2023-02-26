@@ -29,3 +29,14 @@ vim.keymap.set("n", "Q", ":q<CR>")
 vim.keymap.set("n", "<leader>=", ":wincmd =<CR>")
 vim.keymap.set("n", "<leader>[", ":bp<CR>")
 vim.keymap.set("n", "<leader>]", ":bn<CR>")
+
+-- terminal
+vim.keymap.set("n", "<leader>tt", ":ToggleTerm<CR>")
+
+-- terminal pane management
+vim.keymap.set('t', '<C-h>', [[<Cmd>wincmd h<CR>]])
+vim.keymap.set('t', '<C-j>', [[<Cmd>wincmd j<CR>]])
+vim.keymap.set('t', '<C-k>', [[<Cmd>wincmd k<CR>]])
+vim.keymap.set('t', '<C-l>', [[<Cmd>wincmd l<CR>]])
+vim.keymap.set('t', '<esc><esc>', [[<Cmd>ToggleTerm<CR>]])
+vim.keymap.set('t', '<leader><esc>', [[<C-\><C-n>]])
