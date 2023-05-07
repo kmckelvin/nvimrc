@@ -13,6 +13,13 @@ lsp.ensure_installed({
   'solargraph',
 })
 
+lsp.configure('gopls', {
+  settings = {
+    goimports = true
+  }
+})
+
+
 lsp.on_attach(function(client, bufnr)
   -- In this case, we create a function that lets us more easily define mappings specific
   -- for LSP related items. It sets the mode, buffer and description for us each time.
