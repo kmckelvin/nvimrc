@@ -6,6 +6,6 @@ if vim.fn.exists("$TMUX") then
 
   vim.api.nvim_create_autocmd(
     { "VimLeave", "VimSuspend" },
-    { command = 'call system("tmux setw automatic-rename; tmux rename-window zsh")' }
+    { command = 'call system("tmux setw automatic-rename")' }
   )
 end
