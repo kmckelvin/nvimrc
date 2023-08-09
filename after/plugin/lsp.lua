@@ -13,13 +13,6 @@ lsp.ensure_installed({
   'solargraph',
 })
 
-lsp.configure('gopls', {
-  settings = {
-    goimports = true
-  }
-})
-
-
 lsp.on_attach(function(client, bufnr)
   -- In this case, we create a function that lets us more easily define mappings specific
   -- for LSP related items. It sets the mode, buffer and description for us each time.
@@ -71,7 +64,6 @@ end)
 
 vim.api.nvim_create_autocmd("BufWritePre", {
   pattern = {
-    "*.go",
     "*.js",
     "*.jsx",
     "*.json",
@@ -95,3 +87,15 @@ vim.api.nvim_create_autocmd("FileType", {
   end,
 })
 lsp.setup()
+
+-- Run goimports on a go buffer before save
+vim.cmd([[
+function! s:GoImports()
+  let l:winview = winsaveview()
+  execute '%!goimports'
+  call winrestview(l:winview)
+endfunction
+
+command! GoImports call s:GoImports()
+autocmd BufWritePre *.go :GoImports
+]])
