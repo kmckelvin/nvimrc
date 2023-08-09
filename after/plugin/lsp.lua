@@ -78,7 +78,8 @@ vim.api.nvim_create_autocmd("BufWritePre", {
     "*.ts",
     "*.tsx",
     "*.lua",
-    "*.rs"
+    "*.rs",
+    "*.rb"
   },
   callback = function() vim.lsp.buf.format() end
 })
