@@ -92,10 +92,32 @@ lsp.setup()
 vim.cmd([[
 function! s:GoImports()
   let l:winview = winsaveview()
-  execute '%!goimports'
+  execute '!goimports -w %'
+  execute 'e'
   call winrestview(l:winview)
 endfunction
 
 command! GoImports call s:GoImports()
-autocmd BufWritePre *.go :GoImports
+autocmd BufWritePost *.go silent :GoImports
 ]])
+
+vim.cmd(
+  [[
+  function! GoToggle()
+  let current_file = expand('%:p')
+  if current_file =~ '_test.go$'
+    let new_file = substitute(current_file, '_test.go$', '.go', '')
+  else
+    let new_file = substitute(current_file, '.go$', '_test.go', '')
+  endif
+
+  if filereadable(new_file)
+    execute 'edit' new_file
+  else
+    echo "Corresponding file not found: " . new_file
+  endif
+endfunction
+command! GoToggle call GoToggle()
+]])
+
+vim.keymap.set('n', "<leader>pt", ":GoToggle<CR>")
