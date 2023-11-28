@@ -1,4 +1,5 @@
 require("nvim-web-devicons").setup()
+
 require("nvim-tree").setup({
   update_focused_file = {
     enable = true,
@@ -6,6 +7,8 @@ require("nvim-tree").setup({
     ignore_list = {},
   }
 })
+
+require("nvim-tree.api").tree.open()
 
 vim.keymap.set("n", "<leader>ft", ":NvimTreeOpen<CR>")
 vim.keymap.set("n", "<leader>ff", ":NvimTreeFindFile<CR>")
