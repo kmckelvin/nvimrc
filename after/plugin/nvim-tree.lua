@@ -8,7 +8,5 @@ require("nvim-tree").setup({
   }
 })
 
-require("nvim-tree.api").tree.open()
-
 vim.keymap.set("n", "<leader>ft", ":NvimTreeOpen<CR>")
 vim.keymap.set("n", "<leader>ff", ":NvimTreeFindFile<CR>")
